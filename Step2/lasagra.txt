@@ -1,0 +1,274 @@
+*******************************************************************************
+JPL/HORIZONS                    233P/La Sagra              2023-Oct-16 05:42:24
+Rec #:90001182 (+COV) Soln.date: 2023-Apr-24_21:53:17    # obs: 113 (2005-2021)
+ 
+IAU76/J2000 helio. ecliptic osc. elements (au, days, deg., period=Julian yrs):
+ 
+  EPOCH=  2456437.5 ! 2013-May-25.0000000 (TDB)    RMSW= n.a.
+   EC= .4106214992185762   QR= 1.787924898485087   TP= 2457198.8144530305
+   OM= 74.98285999677402   W= 27.15139553627318    IN= 11.27919214924058
+   A= 3.033576718720785    MA= 217.9845237486835   ADIST= 4.279228538956483
+   PER= 5.2837307216321    N= .18653984            ANGMOM= .027318782
+   DAN= 1.84718            DDN= 3.97412            L= 101.6830986
+   B= 5.1208172            MOID= .81385899         TP= 2015-Jun-25.3144530305
+ 
+Comet physical (GM= km^3/s^2; RAD= km):
+   GM= n.a.                RAD= n.a.
+   M1=  18.7     M2=  n.a.     k1=  4.5    k2= n.a.     PHCOF= n.a.
+COMET comments 
+1: soln ref.= JPL#15, data arc: 2005-02-09 to 2021-04-17
+2: k1=4.5;
+*******************************************************************************
+
+
+*******************************************************************************
+Ephemeris / WWW_USER Mon Oct 16 05:42:24 2023 Pasadena, USA      / Horizons    
+*******************************************************************************
+Target body name: 233P/La Sagra                   {source: JPL#15}
+Center body name: Earth (399)                     {source: DE441}
+Center-site name: Siding Spring Observatory
+*******************************************************************************
+Start time      : A.D. 1986-Mar-20 18:07:48.2400 UT      
+Stop  time      : A.D. 1996-Apr-14 17:26:04.4535 UT      
+Step-size       : 0 steps
+*******************************************************************************
+Target pole/equ : undefined
+Target radii    : undefined                                                    
+Center geodetic : 149.0661, -31.2771053, 1.17238  {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 149.0661,5457.10593,-3292.79873 {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : ITRF93                          {East-longitude positive}
+Center radii    : 6378.137, 6378.137, 6356.752 km {Equator_a, b, pole_c}       
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: DE441}
+Rel. light bend : Sun                             {source: DE441}
+Rel. lght bnd GM: 1.3271E+11 km^3/s^2                                          
+Small-body perts: Yes                             {source: SB441-N16}
+Atmos refraction: NO (AIRLESS)
+RA format       : HMS
+Time format     : CAL 
+Calendar mode   : Mixed Julian/Gregorian
+EOP file        : eop.231013.p240103                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2023-OCT-13. PREDICTS-> 2024-JAN-02
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+Table cut-offs 3: RA/DEC angular rate (     0.0=NO )                           
+*******************************************************************************
+Initial IAU76/J2000 heliocentric ecliptic osculating elements (au, days, deg.):
+  EPOCH=  2456437.5 ! 2013-May-25.0000000 (TDB)    RMSW= n.a.                  
+   EC= .4106214992185762   QR= 1.787924898485087   TP= 2457198.8144530305      
+   OM= 74.98285999677402   W= 27.15139553627318    IN= 11.27919214924058       
+  Equivalent ICRF heliocentric cartesian coordinates (au, au/d):
+   X= 2.011342466395656E+00  Y=-3.051957066981801E+00  Z=-1.946812534754579E+00
+  VX= 4.970141097750711E-03 VY= 4.405523220477806E-03 VZ= 1.119258528068342E-03
+Comet physical (GM= km^3/s^2; RAD= km):                                        
+   GM= n.a.                RAD= n.a.                                           
+   M1=  18.7     M2=  n.a.     k1=  4.5    k2= n.a.     PHCOF= n.a.            
+*************************************************************************************************************************************************************************************
+ Date__(UT)__HR:MN:SC.fff     R.A.__(FK4/B1950)___DEC    T-mag   N-mag             delta      deldot     S-O-T /r     S-T-O  Sky_motion  Sky_mot_PA  RelVel-ANG  Lun_Sky_Brt  sky_SNR
+*************************************************************************************************************************************************************************************
+$$SOE
+ 1975-Jun-07 14:54:11.635     17 56 37.27 -26 07 41.4   24.016    n.a.  3.18983841244709  -4.4333517  166.3764 /L    3.2813   0.4716506   262.27096   -13.70539         n.a.     n.a.
+ 1976-May-30 18:19:11.139     20 56 08.71 -26 33 51.3   24.230    n.a.  3.54933530117993 -25.0993870  119.6754 /L   12.2718   0.1455733   196.64627   -76.02662         n.a.     n.a.
+ 1977-Oct-06 13:33:19.746     00 12 17.08 -17 41 37.5   21.771    n.a.  1.70950115816444  -0.8481876  155.6910 /T    8.9208   0.5912687   257.17447   -3.976592         n.a.     n.a.
+ 1979-Jun-24 09:18:54.881     13 20 17.06 +00 46 59.3   22.954    n.a.  2.60274695382502  29.5842092  106.1777 /T   18.6860   0.3216875   149.25350   71.114184         n.a.     n.a.
+ 1979-Jun-29 09:09:16.687  m  13 21 54.67 +00 13 07.8   23.038    n.a.  2.68878099772884  30.0759548  102.0710 /T   18.9115   0.3610728   142.87852   68.684691        0.298     n.a.
+ 1980-Jul-29 09:13:30.068  m  16 39 58.88 -23 57 41.3   24.178    n.a.  3.46701250621312  23.8535211  125.7957 /T   11.4593   0.1493545   262.21711   75.296640        1.736     n.a.
+ 1981-Aug-27 12:40:03.322     19 17 47.09 -31 40 51.2   24.129    n.a.  3.39192552821921  17.4471539  132.2803 /T   10.3985   0.2371227   271.48098   60.870677         n.a.     n.a.
+ 1981-Oct-01 09:58:30.422  m  19 14 41.64 -31 06 12.1   24.363    n.a.  3.82171663535217  23.8847167   98.3121 /T   14.0190   0.1425019   60.077789   74.590846        0.064     n.a.
+ 1981-Oct-15 09:47:20.481     19 19 49.89 -30 40 21.0   24.459    n.a.  4.01477059024868  23.9611270   85.8013 /T   14.1557   0.2663028   70.864152   61.659244         n.a.     n.a.
+ 1984-Jan-30 17:29:07.779  m  12 34 51.02 +16 02 35.3   20.675    n.a.  1.30458414141407  -8.0951808  125.9138 /L   22.9730   0.2849081   22.370307   -60.96972        0.020     n.a.
+ 1985-Jun-26 11:43:31.649  m  16 12 06.32 -20 05 29.6   23.778    n.a.  3.02026803742984  16.5626288  150.4564 /T    7.3107   0.3857551   269.11096   49.623138        1.208     n.a.
+ 1985-Jun-26 12:54:20.018  m  16 12 04.38 -20 05 29.9   23.779    n.a.  3.02074033026022  16.6988228  150.4016 /T    7.3230   0.3850165   269.27424   49.904252        1.154     n.a.
+ 1986-Mar-18 16:57:22.919     19 21 47.53 -25 53 14.5   24.809    n.a.  4.51849329977245 -25.1213900   68.9896 /L   12.5876   0.4002309   92.008700   -48.97175         n.a.     n.a.
+ 1986-Mar-20 17:12:27.332     19 23 12.52 -25 53 53.6   24.796    n.a.  4.48954635065160 -25.3974556   70.6704 /L   12.7316   0.3873341   92.367816   -50.38793         n.a.     n.a.
+ 1986-Mar-20 17:37:23.236     19 23 13.23 -25 53 54.0   24.795    n.a.  4.48929246430088 -25.3822004   70.6851 /L   12.7328   0.3865089   92.352301   -50.43263         n.a.     n.a.
+ 1986-Mar-20 18:07:48.240     19 23 14.10 -25 53 54.6   24.795    n.a.  4.48898295822829 -25.3586255   70.7029 /L   12.7342   0.3855599   92.326348   -50.47757         n.a.     n.a.
+ 1986-Mar-20 18:47:41.687 A   19 23 15.24 -25 53 55.2   24.795    n.a.  4.48857754114471 -25.3201967   70.7264 /L   12.7361   0.3844343   92.281411   -50.51967         n.a.     n.a.
+ 1986-Mar-21 17:15:00.358     19 23 53.87 -25 54 15.3   24.789    n.a.  4.47500157536564 -25.5293397   71.5107 /L   12.7995   0.3809541   92.566772   -51.09066         n.a.     n.a.
+ 1986-Mar-21 17:50:54.460     19 23 54.88 -25 54 16.0   24.788    n.a.  4.47463414209251 -25.5048163   71.5319 /L   12.8012   0.3797866   92.541252   -51.15198         n.a.     n.a.
+ 1986-Mar-21 18:27:48.398     19 23 55.92 -25 54 16.6   24.788    n.a.  4.47425692692392 -25.4720271   71.5536 /L   12.8028   0.3786896   92.503891   -51.19928         n.a.     n.a.
+ 1986-Mar-21 18:45:57.417     19 23 56.42 -25 54 17.0   24.788    n.a.  4.47407156860072 -25.4533540   71.5642 /L   12.8036   0.3781957   92.481678   -51.21643         n.a.     n.a.
+ 1986-Mar-22 16:33:10.673  m  19 24 33.32 -25 54 37.7   24.782    n.a.  4.46083668305497 -25.6768452   72.3267 /L   12.8630   0.3760442   92.795668   -51.70253        1.705     n.a.
+ 1986-Mar-22 17:18:03.301     19 24 34.57 -25 54 38.6   24.782    n.a.  4.46037470025099 -25.6554877   72.3532 /L   12.8649   0.3744903   92.777922   -51.79757         n.a.     n.a.
+ 1986-Mar-22 18:11:54.455     19 24 36.05 -25 54 39.6   24.781    n.a.  4.45982099535363 -25.6137771   72.3850 /L   12.8673   0.3727909   92.732983   -51.88233         n.a.     n.a.
+ 1986-Mar-22 18:32:59.990     19 24 36.64 -25 54 40.0   24.781    n.a.  4.45960440131948 -25.5931588   72.3974 /L   12.8682   0.3721911   92.708860   -51.90608         n.a.     n.a.
+ 1991-Aug-16 09:14:38.973  m  17 59 58.18 -29 19 13.9   24.313    n.a.  3.58570659572593  21.1354387  127.3292 /T   10.8498   0.1723656   270.82196   70.532209        0.889     n.a.
+ 1991-Sep-29 09:26:08.648     18 04 21.13 -29 05 45.9   24.661    n.a.  4.21999118606776  26.4274820   85.8226 /T   13.5444   0.2488040   85.584466   64.347537         n.a.     n.a.
+ 1996-Apr-14 17:26:04.453  m  18 25 26.21 -24 49 28.5   24.326    n.a.  3.71206747976129 -23.5150142  108.6132 /L   13.2713   0.0698326   159.41849   -82.40986        0.066     n.a.
+$$EOE
+*************************************************************************************************************************************************************************************
+Column meaning:
+ 
+TIME
+
+  Times PRIOR to 1962 are UT1, a mean-solar time closely related to the
+prior but now-deprecated GMT. Times AFTER 1962 are in UTC, the current
+civil or "wall-clock" time-scale. UTC is kept within 0.9 seconds of UT1
+using integer leap-seconds for 1972 and later years.
+
+  Conversion from the internal Barycentric Dynamical Time (TDB) of solar
+system dynamics to the non-uniform civil UT time-scale requested for output
+has not been determined for UTC times after the next July or January 1st.
+Therefore, the last known leap-second is used as a constant over future
+intervals.
+
+  Time tags refer to the UT time-scale conversion from TDB on Earth
+regardless of observer location within the solar system, although clock
+rates may differ due to the local gravity field and no analog to "UT"
+may be defined for that location.
+
+  Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
+(" ") denotes an A.D. date.
+ 
+CALENDAR SYSTEM
+
+  Mixed calendar mode was active such that calendar dates after AD 1582-Oct-15
+(if any) are in the modern Gregorian system. Dates prior to 1582-Oct-5 (if any)
+are in the Julian calendar system, which is automatically extended for dates
+prior to its adoption on 45-Jan-1 BC.  The Julian calendar is useful for
+matching historical dates. The Gregorian calendar more accurately corresponds
+to the Earth's orbital motion and seasons. A "Gregorian-only" calendar mode is
+available if such physical events are the primary interest.
+
+  NOTE: "n.a." in output means quantity "not available" at the print-time.
+ 
+SOLAR PRESENCE (OBSERVING SITE)
+  Time tag is followed by a blank, then a solar-presence symbol:
+
+       '*'  Daylight (refracted solar upper-limb on or above apparent horizon)
+       'C'  Civil twilight/dawn
+       'N'  Nautical twilight/dawn
+       'A'  Astronomical twilight/dawn
+       ' '  Night OR geocentric ephemeris
+
+LUNAR PRESENCE (OBSERVING SITE)
+  The solar-presence symbol is immediately followed by a lunar-presence symbol:
+
+       'm'  Refracted upper-limb of Moon on or above apparent horizon
+       ' '  Refracted upper-limb of Moon below apparent horizon OR geocentric
+            ephemeris
+ 
+ 'R.A.__(FK4/B1950)___DEC' =
+  Astrometric right ascension and declination of the target center with
+respect to the observing site (coordinate origin) in the FK4/B1950
+reference frame. Compensated for down-leg light-time delay and elliptic
+aberration.
+
+  Units: RA  in hours-minutes-seconds of time,    HH MM SS.ff{ffff}
+         DEC in degrees-minutes-seconds of arc,  sDD MM SS.f{ffff}
+ 
+ 'T-mag   N-mag' =
+   Comets' apparent visual total magnitude ("T-mag") and nuclear magnitude
+("N-mag") using the standard IAU model:
+
+   T-mag= M1 + 5*log10(delta) + k1*log10(r)
+   N-mag= M2 + 5*log10(delta) + k2*log10(r) + phcof*beta
+
+   Units: MAGNITUDES
+ 
+ 'delta      deldot' =
+   Apparent range ("delta", light-time aberrated) and range-rate ("delta-dot")
+of the target center relative to the observer. A positive "deldot" means the
+target center is moving away from the observer, negative indicates movement
+toward the observer.  Units: AU and KM/S
+ 
+ 'S-O-T /r' =
+   Sun-Observer-Target apparent SOLAR ELONGATION ANGLE seen from the observers'
+location at print-time.
+
+   The '/r' column provides a code indicating the targets' apparent position
+relative to the Sun in the observers' sky, as described below:
+
+   Case A: For an observing location on the surface of a rotating body, that
+body rotational sense is considered:
+
+    /T indicates target TRAILS Sun   (evening sky: rises and sets AFTER Sun)
+    /L indicates target LEADS Sun    (morning sky: rises and sets BEFORE Sun)
+
+   Case B: For an observing point that does not have a rotational model (such
+as a spacecraft), the "leading" and "trailing" condition is defined by the
+observers' heliocentric ORBITAL motion:
+
+    * If continuing in the observers' current direction of heliocentric
+       motion would encounter the targets' apparent longitude first, followed
+       by the Sun's, the target LEADS the Sun as seen by the observer.
+
+    * If the Sun's apparent longitude would be encountered first, followed
+       by the targets', the target TRAILS the Sun.
+
+   Two other codes can be output:
+    /* indicates observer is Sun-centered    (undefined)
+    /? Target is aligned with Sun center     (no lead or trail)
+
+   The S-O-T solar elongation angle is numerically the minimum separation
+angle of the Sun and target in the sky in any direction. It does NOT indicate
+the amount of separation in the leading or trailing directions, which would
+be defined along the equator of a spherical coordinate system.
+
+   Units: DEGREES
+ 
+ 'S-T-O' =
+   The Sun-Target-Observer angle; the interior vertex angle at target center
+formed by a vector from the target to the apparent center of the Sun (at
+reflection time on the target) and the apparent vector from target to the
+observer at print-time. Slightly different from true PHASE ANGLE (requestable
+separately) at the few arcsecond level in that it includes stellar aberration
+on the down-leg from target to observer.  Units: DEGREES
+ 
+ 'Sky_motion  Sky_mot_PA  RelVel-ANG' =
+  Total apparent angular rate of the target in the plane-of-sky. "Sky_mot_PA"
+is the position angle of the target's direction of motion in the plane-of-sky,
+measured counter-clockwise from the apparent of-date north pole direction.
+"RelVel-ANG" is the flight path angle of the target's relative motion with
+respect to the observer's line-of-sight, in the range [-90,+90], where positive
+values indicate motion away from the observer, negative values are toward the
+observer:
+
+  -90 = target is moving directly toward the observer
+    0 = target is moving at right angles to the observer's line-of-sight
+  +90 = target is moving directly away from the observer
+
+UNITS:  ARCSECONDS/MINUTE, DEGREES, DEGREES
+ 
+ 'Lun_Sky_Brt  sky_SNR' =
+  Sky brightness due to moonlight scattered by Earth's atmosphere at the
+target's position in the sky. "sky_SNR" is the visual signal-to-noise ratio
+(SNR) of the target's surface brightness relative to background sky. Output
+only for topocentric Earth observers when both the Moon and target are above
+the local horizon and the Sun is in astronomical twilight (or further) below
+the horizon, and the target is not the Moon or Sun. If all conditions are
+not met, "n.a." is output. Galactic brightness, local sky light-pollution
+and weather are NOT considered. Lunar opposition surge is considered. The
+value returned is accurate under ideal conditions at the approximately 8-23%
+level, so is a useful but not definitive value.
+
+  If the target-body radius is also known, "sky_SNR" is output. This is the
+approximate visual signal-to-noise ratio of the target's brightness divided
+by lunar sky brightness. When sky_SNR < 1, the target is dimmer than the
+ideal moonlight-scattering background sky, so unlikely to be detectable at
+visual wavelengths. In practice, visibility requires sky_SNR > 1 and a
+detector sensitive enough to reach the target's magnitude, even if it isn't
+washed out by moonlight. When relating magnitudes and brightness values,
+keep in mind their logarithmic relationship m2-m1 = -2.5*log_10(b2/b1).
+
+  UNITS: VISUAL MAGNITUDES / ARCSECOND^2, and unitless ratio
+
+Computations by ...
+
+    Solar System Dynamics Group, Horizons On-Line Ephemeris System
+    4800 Oak Grove Drive, Jet Propulsion Laboratory
+    Pasadena, CA  91109   USA
+
+    General site: https://ssd.jpl.nasa.gov/
+    Mailing list: https://ssd.jpl.nasa.gov/email_list.html
+    System news : https://ssd.jpl.nasa.gov/horizons/news.html
+    User Guide  : https://ssd.jpl.nasa.gov/horizons/manual.html
+    Connect     : browser        https://ssd.jpl.nasa.gov/horizons/app.html#/x
+                  API            https://ssd-api.jpl.nasa.gov/doc/horizons.html
+                  command-line   telnet ssd.jpl.nasa.gov 6775
+                  e-mail/batch   https://ssd.jpl.nasa.gov/ftp/ssd/hrzn_batch.txt
+                  scripts        https://ssd.jpl.nasa.gov/ftp/ssd/SCRIPTS
+    Author      : Jon.D.Giorgini@jpl.nasa.gov
+
+*************************************************************************************************************************************************************************************
