@@ -1,0 +1,9 @@
+Column 1. ID of the plate
+Column 2. Name of the asteroid on the plate
+Column 3. Date of the plate taken (MJD)
+Column 4. RA of the centre of the plate (radians)
+Column 5. Dec of the centre of the plate (radians)
+Column 6. RA of the asteroid (radians)
+Column 7. Dec of the asteroid (radians)
+Column 8. Difference in RA direction between the asteroid and the centre of the plate on the plate (mm)
+Column 8. Difference in Dec direction between the asteroid and the centre of the plate on the plate (mm)
