@@ -4,6 +4,17 @@ import numpy as np
 from astropy.visualization import simple_norm
 from photutils.aperture import CircularAperture, aperture_photometry
 from matplotlib.patches import Circle
+
+def lin_interp(x, y, i, half):
+    return x[i] + (x[i+1] - x[i]) * ((half - y[i]) / (y[i+1] - y[i]))
+
+def half_max_x(x, y):
+    half = max(y)/2.0
+    signs = np.sign(np.add(y, -half))
+    zero_crossings = (signs[0:-2] != signs[1:-1])
+    zero_crossings_i = np.where(zero_crossings)[0]
+    return [lin_interp(x, y, zero_crossings_i[0], half),
+            lin_interp(x, y, zero_crossings_i[1], half)]
 # Open the FITS file
 fits_file_path = "18097_02_intensity.fits"
 hdul = fits.open(fits_file_path)
@@ -15,7 +26,7 @@ data = hdul[0].data
 hdul.close()
 
 # Define the coordinates of the region you want to zoom in
-x_start, x_end, y_start, y_end = 1056, 1106, 638, 688
+x_start, x_end, y_start, y_end = 1055, 1105, 638, 688
 
 # Extract the zoomed-in region
 zoomed_data = data[y_start:y_end, x_start:x_end]
@@ -37,11 +48,14 @@ for r in radii:
 
 # Sum the pixel values along the y-axis for each x-coordinate
 light_profile_x = np.sum(zoomed_data, axis=0)
-
+normalised_light_profile = light_profile_x-min(light_profile_x)
 
 # Determine the x-coordinates for the profile
 x_coords = np.arange(0, light_profile_x.shape[0])
-
+hmx = half_max_x(x_coords,normalised_light_profile)
+# print the answer
+fwhm = hmx[1] - hmx[0]
+print("FWHM:{:.3f}".format(fwhm))
 # Display the original zoomed-in region
 plt.figure(figsize=(20, 5))
 plt.subplot(1, 4, 1)
@@ -71,10 +85,11 @@ plt.plot(radii, mean_fluxes, 'o-', color='black')
 plt.xlabel('Aperture Radius (pixels)')
 plt.ylabel('Mean Flux (arbitrary units)')
 plt.title('Mean Radial Light Profile')
-
+half = max(normalised_light_profile)/2.0
 # Plot the light profile along the x-axis on the fourth subplot
 plt.subplot(1, 4, 4)
-plt.plot(x_coords, light_profile_x, 'o-', color='blue')
+plt.plot(x_coords, normalised_light_profile, 'o-', color='blue')
+plt.plot(hmx,[half,half])
 plt.xlabel('Pixel Position along x-axis')
 plt.ylabel('Summed Flux along y-axis')
 plt.title('Light Profile along x-axis')

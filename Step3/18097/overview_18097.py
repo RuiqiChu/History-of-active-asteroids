@@ -23,6 +23,7 @@ x_start_test, x_end_test, y_start_test, y_end_test = 1039, 1639, 588, 1188
 zoomed_data = data[y_start:y_end, x_start:x_end]
 zoomed_data_log = zoomed_data
 
+
 # Display the original, rotated region, and light profile side by side
 plt.figure(figsize=(7, 7))
 
