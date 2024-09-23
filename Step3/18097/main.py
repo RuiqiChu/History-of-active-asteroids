@@ -1,8 +1,6 @@
 from astropy.io import fits  
 import matplotlib.pyplot as plt  
 from matplotlib.patches import Circle  
-from astropy.io import fits
-import matplotlib.pyplot as plt
 import numpy as np
 from astropy.visualization import simple_norm
 from photutils.aperture import CircularAperture, aperture_photometry
