@@ -1,6 +1,8 @@
 from astropy.io import fits  
 import matplotlib.pyplot as plt  
 from matplotlib.patches import Circle  
+from astropy.io import fits
+import matplotlib.pyplot as plt
 import numpy as np
 from astropy.visualization import simple_norm
 from photutils.aperture import CircularAperture, aperture_photometry
@@ -24,9 +26,12 @@ class DataHandler:
         except Exception as e:  
             print(f"Error reading FITS file: {e}")  
             self.data = None  
+
+    # Calculate the line intersection
     def lin_interp(self,x, y, i, half):
         return x[i] + (x[i+1] - x[i]) * ((half - y[i]) / (y[i+1] - y[i]))
 
+    # Calculate the full width half maximum
     def half_max_x(self,x, y):
         half = max(y)/2.0
         signs = np.sign(np.add(y, -half))
@@ -35,6 +40,14 @@ class DataHandler:
         return [self.lin_interp(x, y, zero_crossings_i[0], half),
                 self.lin_interp(x, y, zero_crossings_i[1], half)]
     
+    # Draw a circle and label the objects on the map
+    def draw_circle_and_label(self, x, y, label,x_text_offset,y_text_offset, radius=10, color='red', ha='center'):  
+        circle = Circle((x, y), radius, color=color, fill=False)  
+        plt.gca().add_patch(circle)
+        plt.text(x-x_text_offset, y - y_text_offset, label, color='red')
+
+  
+
     def overview(self,object_positions):  
         if self.data is None:  
             print("No data available to display.")  
@@ -54,29 +67,11 @@ class DataHandler:
         plt.figure(figsize=(7, 7))  
         plt.imshow(zoomed_data, cmap='viridis')  
   
-        # Draw the red circle for Object
-        object_circle1 = Circle((self.object_x, self.object_y), 20, color='red', fill=False)
-        plt.gca().add_patch(object_circle1)
-        # Label Companion 1
-        plt.text(self.object_x, self.object_y + 30, 'Object', color='red', ha='center')
-
-        # Draw the red circle for Companion 1
-        companion_circle1 = Circle((self.com1_x, self.com1_y), 10, color='red', fill=False)
-        plt.gca().add_patch(companion_circle1)
-        # Label Companion 1
-        plt.text(self.com1_x, self.com1_y + 15, 'Companion 1', color='red', ha='center')
-
-        # Draw the red circle for Companion 2
-        companion_circle2 = Circle((self.com2_x, self.com2_y), 10, color='red', fill=False)
-        plt.gca().add_patch(companion_circle2)
-        # Label Companion 2
-        plt.text(self.com2_x, self.com2_y + 15, 'Companion 2', color='red', ha='center') 
+        self.draw_circle_and_label(self.object_x, self.object_y, 'Object', 30, 15)
+        self.draw_circle_and_label(self.com1_x, self.com1_y, 'Companion 1',50, 15)  
+        self.draw_circle_and_label(self.com2_x, self.com2_y, 'Companion 2',50, 15)  
+        self.draw_circle_and_label(self.com3_x, self.com3_y, 'Companion 3',50, 15) 
         
-        # Draw the red circle for Companion 3
-        companion_circle3 = Circle((self.com3_x, self.com3_y), 10, color='red', fill=False)
-        plt.gca().add_patch(companion_circle3)
-        # Label Companion 3
-        plt.text(self.com3_x, self.com3_y + 15, 'Companion 3', color='red', ha='center')
         plt.colorbar()
         plt.title("Original Zoomed data") 
         plt.tight_layout() 
@@ -178,13 +173,10 @@ class DataHandler:
         x_start2, x_end2, y_start2, y_end2 = com2_pos
         x_start3, x_end3, y_start3, y_end3 = com3_pos
 
-
-
         # Extract the zoomed-in region
         zoomed_data1 = self.data[y_start1:y_end1, x_start1:x_end1]
         zoomed_data2 = self.data[y_start2:y_end2, x_start2:x_end2]
         zoomed_data3 = self.data[y_start3:y_end3, x_start3:x_end3]
-
 
         # Sum the pixel values along the y-axis for each x-coordinate
         light_profile_x1 = np.sum(zoomed_data1, axis=0)
@@ -215,8 +207,6 @@ class DataHandler:
         normalization_factor3 = factor / peak_flux3
         normalized_light_profile_x3 = reduced_light_x3 * normalization_factor3
         x_coords3 = np.arange(0, light_profile_x3.shape[0])
-
-
 
         # Now create a plot to compare all four light profiles
         plt.figure(figsize=(10, 5))
